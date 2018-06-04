@@ -1,1 +1,3 @@
-console.log('by')
+const zero = () => 0;
+
+zero();
