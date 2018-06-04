@@ -1,14 +1,17 @@
 {
-  "name": "temp1",
+  "name": "mylint",
+  "author": "Serge Desyatkov",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "mylinter": "./bin/mylinter.js"
+  },
   "scripts": {
-    "start": "node index.js",
+    "start": "mylinter",
     "precommit": "lint-staged"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "ast-parents": "0.0.1",
