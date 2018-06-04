@@ -4,7 +4,8 @@ const chalk = require('chalk');
 const log = console.log;
 
 const checkStatus =  status => {
-    console.log(__filename);
+    console.log(process.argv);
+    
     if(status == true) {
         process.exitCode = 0;
     } else {
