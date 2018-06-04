@@ -22,7 +22,9 @@
       "git add"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chalk": "^2.4.1"
+  },
   "engines": {
     "node": ">=0.10.0"
   }

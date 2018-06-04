@@ -1,5 +1,14 @@
-const zero = () => 0;
-zero();
+const chalk = require('chalk');
+const log = console.log;
 
-process.exitCode = 0; 
-//process.exitCode = 0; 
+const checkStatus =  status => {
+    if(status == true) {
+        log( chalk.bgHex('#128731').keyword('black').bold(' Success! ') );
+        process.exitCode = 0;
+    } else {
+        log( chalk.bgHex('#ffa500').keyword('black').bold(' Error! ') );
+        process.exitCode = 2; 
+    }
+}
+
+checkStatus(true)
