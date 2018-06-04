@@ -1,3 +1,6 @@
 const zero = () => 0;
+// zero();
 
-zero();
+// console.log(zero())
+
+process.exitCode = 0; //?
