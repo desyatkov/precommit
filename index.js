@@ -10,4 +10,4 @@ const checkStatus =  status => {
     }
 }
 
-checkStatus(true);
+checkStatus(false);
