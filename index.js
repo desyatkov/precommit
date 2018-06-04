@@ -2,11 +2,14 @@ let handler = {
     set: function (target, name, value) {
         target[name] = value * 10;
     },
-    has: function(target, key) {
+    has: function (target, key) {
         if (key in target && key.includes("ar")) {
             return true;
         }
         return false;
+    },
+    apply: function (target, thisArg, argumentsList) {
+        return target(argumentsList[0], argumentsList[1]) + 1;
     }
 }
 
