@@ -5,6 +5,7 @@ const log = console.log;
 
 const checkStatus =  status => {
     console.log(process.argv);
+    //...
     
     if(status == true) {
         process.exitCode = 0;
